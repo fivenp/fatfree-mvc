@@ -1,0 +1,10 @@
+{
+  "require" : {
+    "php": "^5.5.0",
+    "ext-imagick": "*",
+    "ext-gd": "*"
+  },
+  "require-dev": {
+    "heroku/heroku-buildpack-php": "*"
+  }
+}

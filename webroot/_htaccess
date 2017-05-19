@@ -1,0 +1,33 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteBase /
+	
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+
+	RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
+<IfModule mod_filter.c>
+<IfModule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css text/javascript
+	AddOutputFilterByType DEFLATE application/xml
+	AddOutputFilterByType DEFLATE application/rss+xml
+	AddOutputFilterByType DEFLATE application/javascript application/x-javascript
+</IfModule>
+</IfModule>
+<IfModule mod_expires.c>
+	ExpiresActive on
+	ExpiresDefault "access plus 5 minutes"
+	ExpiresByType image/ico "access plus 1 year"
+	ExpiresByType image/jpg "access plus 1 month"
+	ExpiresByType image/jpeg "access plus 1 month"
+	ExpiresByType image/gif "access plus 1 month"
+	ExpiresByType image/png "access plus 1 month"
+	ExpiresByType application/x-shockwave-flash "access plus 1 month"
+	ExpiresByType text/javascript "access plus 2 days"
+	ExpiresByType text/css "access plus 2 days"
+	ExpiresByType text/xml "access plus 0 seconds"
+	ExpiresByType application/xml "access plus 0 seconds"
+	ExpiresByType application/json "access plus 0 seconds"
+	ExpiresByType text/cache-manifest "access plus 0 seconds"
+</IfModule>

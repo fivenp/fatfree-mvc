@@ -1,0 +1,17 @@
+# BASIC LOCAL ENVIRONMENT CONFIGURATION
+
+[globals]
+DEBUG="3"
+env = "dev"
+asset_url = "/assets/"
+asset_domain = ""
+img_domain = ""
+
+# EITHER SET IT IN YOUR ENV VARS OR HERE
+
+db.dsn="pgsql:host=localhost;port=5432;dbname=test"
+db.host="localhost"
+db.port="5432"
+db.user="user"
+db.pass="pass"
+db.db="test"

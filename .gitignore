@@ -1,0 +1,21 @@
+#.htpasswd/.htaccess
+.sshtunnel
+.test.php
+
+# Test URI
+# Ignore netbeans folder
+nbproject/*
+ 
+# MAC
+.DS_Store
+ 
+# Windows
+Thumbs.db
+ 
+# Eclipse project files
+/.cache
+.project
+.tmp
+/.settings
+.buildpath
+/config/config.local.ini

@@ -1,0 +1,6 @@
+<?php 
+
+$f3=Base::instance(); 
+echo $f3->get('data');
+
+?>
